@@ -1,0 +1,31 @@
+$color-menu:#54A90E;
+$color-fondo:#8EDA4F;
+body{
+    background-color: $color-fondo;
+}
+.menu{
+    background-color: $color-menu;
+}
+.principal{
+    margin: 5%;
+    //margin-left: 5%;
+    //margin-right: 5%;
+}
+
+    .menu,.inicio{
+        float:left;
+        width:100%;
+    }
+
+@media screen and (min-width: 800px) {
+    .menu,.inicio{
+        float:left;
+        width:50%;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .menu,.inicio{
+        float:left;
+        width:40%;
+    }
+}

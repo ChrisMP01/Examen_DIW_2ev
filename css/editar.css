@@ -1,0 +1,31 @@
+body {
+  background-color: #8EDA4F;
+}
+
+.menu {
+  background-color: #54A90E;
+}
+
+.principal {
+  margin: 5%;
+}
+
+.menu, .inicio {
+  float: left;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .menu, .inicio {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu, .inicio {
+    float: left;
+    width: 40%;
+  }
+}
+
+/*# sourceMappingURL=editar.css.map */
