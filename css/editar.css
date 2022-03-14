@@ -1,31 +1,115 @@
+.principal div {
+  display: flex;
+  justify-content: center;
+}
+
 body {
-  background-color: #8EDA4F;
+  background-color: #6a994e;
 }
 
 .menu {
-  background-color: #54A90E;
+  background-color: #386641;
+  width: 100%;
 }
 
-.principal {
-  margin: 5%;
+header {
+  border-style: inset;
+  border-color: #808080;
+  border-radius: 3px;
 }
 
-.menu, .inicio {
+.titulo_pagina, .subtitulo {
+  text-align: center;
+}
+
+.inicio, .novedades {
+  background-color: #488028;
+  border-style: outset;
+  border-color: #808080;
+  border-radius: 3px;
+  margin-top: 3%;
+  text-align: center;
   float: left;
   width: 100%;
 }
 
-@media screen and (min-width: 800px) {
-  .menu, .inicio {
-    float: left;
-    width: 50%;
-  }
+p {
+  text-align: justify;
 }
-@media screen and (min-width: 1025px) {
-  .menu, .inicio {
-    float: left;
-    width: 40%;
+
+footer {
+  border-style: outset;
+  border-color: #808080;
+  border-radius: 3px;
+  background-color: #386641;
+  margin-top: 3%;
+}
+
+img {
+  height: 200px;
+  width: 300px;
+}
+
+#imagen_head {
+  background-image: url("https://mdbcdn.b-cdn.net/img/new/slides/041.webp");
+  height: auto;
+}
+
+#enlaces {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 800px) {
+  #imagen_head {
+    background-image: url("https://mdbcdn.b-cdn.net/img/new/slides/041.webp");
+    background-size: cover;
+    height: 400px;
   }
+
+  img {
+    height: 300px;
+    width: 400px;
+  }
+
+  .menu {
+    background-color: #386641;
+    width: 100%;
+  }
+
+  /*body{
+      margin-left: 1%;
+      margin-right: 1%;
+  }*/
+  .titulo_pagina, .subtitulo {
+    text-align: center;
+  }
+
+  .inicio, .novedades {
+    background-color: #488028;
+    border-style: outset;
+    border-radius: 3px;
+    margin-top: 3%;
+    text-align: center;
+    width: 30%;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  footer {
+    margin-top: 3%;
+    background-color: #386641;
+  }
+
+  /*#enlaces{
+
+  }*/
+}
+header {
+  text-align: center;
+  width: 100%;
 }
 
 /*# sourceMappingURL=editar.css.map */
