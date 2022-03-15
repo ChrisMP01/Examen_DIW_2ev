@@ -16,6 +16,10 @@ body{
     font-family:$fuente-sans;
     font-size: 20px;
 }
+button{
+    background-color: $color-borde;
+    color:$color-blanco;
+}
 
 .principal div{
     display:flex;
@@ -28,6 +32,9 @@ body{
 .menu{
     background-color: $color-menu;
     width:100%;
+}
+.menu a{
+    color:$color-blanco;
 }
 header{
     border-style:inset;
