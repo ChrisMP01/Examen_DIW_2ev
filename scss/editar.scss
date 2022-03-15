@@ -1,31 +1,144 @@
-$color-menu:#54A90E;
-$color-fondo:#8EDA4F;
+//Colores y fuentes
+$color-menu:#386641;
+$color-contenido:#6a994e;
+$color-cuerpo:#51845A;
+$color-fondo:#739E7A;
+$color-borde:#808080;
+$color-blanco:#ffffff;
+$color-titulo:rgba(0, 0, 0, 0.6);
+
+$fuente-sans:sans-serif;
+$fuente-arial:arial;
+//Para móviles y diseño por defecto
 body{
     background-color: $color-fondo;
-}
-.menu{
-    background-color: $color-menu;
-}
-.principal{
-    margin: 5%;
-    //margin-left: 5%;
-    //margin-right: 5%;
+    font-family:$fuente-sans;
+    font-size: 20px;
 }
 
-    .menu,.inicio{
-        float:left;
+.principal div{
+    display:flex;
+    justify-content: center;
+}
+.mask{
+    background-color: $color-titulo;
+}
+
+.menu{
+    background-color: $color-menu;
+    width:100%;
+}
+header{
+    border-style:inset;
+    border-color: $color-borde;
+    border-radius: 3px;
+    text-align: center;
+    width: 100%;
+}
+
+form{
+    display:flex;
+    justify-content: center;
+}
+
+.titulo_pagina,.subtitulo{
+    text-align: center;
+}
+
+.inicio,.novedades{
+    padding-top: 2%;
+    background-color: $color-contenido;
+    border-style:outset;
+    border-color: $color-borde;
+    border-radius: 3px;
+    margin-top:3%;
+    margin-bottom:3%;
+    text-align: center;
+    float:left;
+    width:100%;
+}
+
+footer{
+    border-style:outset;
+    border-color: $color-borde;
+    border-radius: 3px;
+    background-color: $color-menu;
+}
+
+img{
+    height:200px;
+    width:300px;
+}
+
+p{
+    text-align: justify;
+}
+
+h2{
+    font-weight: bold;
+}
+
+#imagen_head{
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+    height: auto;
+}
+
+#enlaces{
+    display:flex;
+    justify-content: center;
+}
+.tituloCuerpo{
+    background-color: $color-titulo;
+    font-family: sans-serif;
+    border:$color-borde 1px solid;
+    text-align: center;
+    margin-left:5%;
+    margin-right:5%;
+    color:$color-blanco;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.principal{
+    padding-top:2%;
+    background-color: $color-cuerpo;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+//Para tabletas y ordenadores
+@media screen and (min-width: 800px) {
+   #imagen_head{
+        background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+        background-size:cover;
+        height: 400px;
+    }
+    img{
+        height: 300px;
+        width:400px;
+    }
+    .menu{
+        background-color: $color-menu;
         width:100%;
     }
 
-@media screen and (min-width: 800px) {
-    .menu,.inicio{
-        float:left;
-        width:50%;
+    .titulo_pagina,.subtitulo{
+        text-align: center;
+    }
+    
+    .inicio,.novedades{
+        background-color: $color-contenido;
+        border-style:outset;
+        border-radius: 3px;
+        //margin-top:3%;
+        text-align: center;
+        width:30%;
+    }
+    p{
+        text-align: justify;
+    }
+    footer{
+        //margin-top: 3%;
+        background-color: $color-menu;
     }
 }
-@media screen and (min-width: 1025px) {
-    .menu,.inicio{
-        float:left;
-        width:40%;
-    }
-}
+

@@ -1,30 +1,137 @@
 body {
-  background-color: #8EDA4F;
+  background-color: #739E7A;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+.principal div {
+  display: flex;
+  justify-content: center;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .menu {
-  background-color: #54A90E;
+  background-color: #386641;
+  width: 100%;
 }
 
-.principal {
-  margin: 5%;
+header {
+  border-style: inset;
+  border-color: #808080;
+  border-radius: 3px;
+  text-align: center;
+  width: 100%;
 }
 
-.menu, .inicio {
+form {
+  display: flex;
+  justify-content: center;
+}
+
+.titulo_pagina, .subtitulo {
+  text-align: center;
+}
+
+.inicio, .novedades {
+  padding-top: 2%;
+  background-color: #6a994e;
+  border-style: outset;
+  border-color: #808080;
+  border-radius: 3px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  text-align: center;
   float: left;
   width: 100%;
 }
 
-@media screen and (min-width: 800px) {
-  .menu, .inicio {
-    float: left;
-    width: 50%;
-  }
+footer {
+  border-style: outset;
+  border-color: #808080;
+  border-radius: 3px;
+  background-color: #386641;
 }
-@media screen and (min-width: 1025px) {
-  .menu, .inicio {
-    float: left;
-    width: 40%;
+
+img {
+  height: 200px;
+  width: 300px;
+}
+
+p {
+  text-align: justify;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+#imagen_head {
+  background-image: url("https://mdbcdn.b-cdn.net/img/new/slides/041.webp");
+  height: auto;
+}
+
+#enlaces {
+  display: flex;
+  justify-content: center;
+}
+
+.tituloCuerpo {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: sans-serif;
+  border: #808080 1px solid;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #ffffff;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.principal {
+  padding-top: 2%;
+  background-color: #51845A;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+@media screen and (min-width: 800px) {
+  #imagen_head {
+    background-image: url("https://mdbcdn.b-cdn.net/img/new/slides/041.webp");
+    background-size: cover;
+    height: 400px;
+  }
+
+  img {
+    height: 300px;
+    width: 400px;
+  }
+
+  .menu {
+    background-color: #386641;
+    width: 100%;
+  }
+
+  .titulo_pagina, .subtitulo {
+    text-align: center;
+  }
+
+  .inicio, .novedades {
+    background-color: #6a994e;
+    border-style: outset;
+    border-radius: 3px;
+    text-align: center;
+    width: 30%;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  footer {
+    background-color: #386641;
   }
 }
 
