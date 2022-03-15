@@ -9,6 +9,7 @@ $color-titulo:rgba(0, 0, 0, 0.6);
 
 $fuente-sans:sans-serif;
 $fuente-arial:arial;
+$justificado:justify;
 //Para móviles y diseño por defecto
 body{
     background-color: $color-fondo;
@@ -71,7 +72,7 @@ img{
 }
 
 p{
-    text-align: justify;
+    text-align: $justificado;
 }
 
 h2{
@@ -89,7 +90,7 @@ h2{
 }
 .tituloCuerpo{
     background-color: $color-titulo;
-    font-family: sans-serif;
+    font-family: $fuente-arial;
     border:$color-borde 1px solid;
     text-align: center;
     margin-left:5%;
@@ -134,7 +135,7 @@ h2{
         width:30%;
     }
     p{
-        text-align: justify;
+        text-align: $justificado;
     }
     footer{
         //margin-top: 3%;
